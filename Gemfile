@@ -1,9 +1,9 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 gem 'rails', '4.0.5'
-gem 'jquery-rails', '3.0.4'
+gem 'jquery-rails'
 gem 'rails_autolink'
-gem 'mysql2'
+gem 'mysql2', '~> 0.3.18'
 gem 'devise'
 gem 'twitter_oauth', git: 'git://github.com/moomerman/twitter_oauth.git'
 gem 'therubyracer'
@@ -38,7 +38,7 @@ gem 'tzinfo-data'
 gem 'turbolinks'
 gem 'geokit-rails'
 gem 'clockwork'
-
+gem 'authlogic'
 # to use debugger
 # gem 'ruby-debug'
 

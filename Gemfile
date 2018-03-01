@@ -39,6 +39,8 @@ gem 'turbolinks'
 gem 'geokit-rails'
 gem 'clockwork'
 gem 'authlogic'
+
+gem 'coap'
 # to use debugger
 # gem 'ruby-debug'
 

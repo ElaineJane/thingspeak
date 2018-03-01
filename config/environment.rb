@@ -10,7 +10,7 @@ Thingspeak::Application.configure do
 		:enable_starttls_auto => true,
 		:address => 'smtp.gmail.com',
 		:port => 587,
-		:domain => '',
+		:domain => '120.78.183.190',
 		:authentication => :plain,
 		:user_name => '',
 		:password => ''

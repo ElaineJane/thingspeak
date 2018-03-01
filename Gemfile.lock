@@ -86,6 +86,7 @@ GEM
       thor
     buftok (0.2.0)
     builder (3.1.4)
+    byebug (10.0.0)
     capistrano (2.15.5)
       highline
       net-scp (>= 1.0.0)
@@ -412,6 +413,7 @@ DEPENDENCIES
   authlogic
   autotest
   autotest-rails
+  byebug
   capistrano (~> 2.15.4)
   chronic
   clockwork

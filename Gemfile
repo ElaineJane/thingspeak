@@ -43,7 +43,7 @@ gem 'authlogic'
 gem 'coap'
 # to use debugger
 # gem 'ruby-debug'
-
+gem 'byebug', :platforms => :ruby_20
 # assets
 gem "sass-rails", "4.0.2"
 gem 'coffee-rails', " ~> 4.0"

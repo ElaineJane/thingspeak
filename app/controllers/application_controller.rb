@@ -196,7 +196,8 @@ class ApplicationController < ActionController::Base
     end
 
     def ssl
-      (Rails.env == 'production') ? 'https' : 'http'
+      #(Rails.env == 'production') ? 'https' : 'http'
+      (Rails.env == 'production') ? 'http' : 'http'
     end
 
     # domain for the api

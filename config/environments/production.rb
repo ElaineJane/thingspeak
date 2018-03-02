@@ -66,8 +66,6 @@ Thingspeak::Application.configure do
   config.assets.js_compressor  = :uglifier
   config.assets.css_compressor = :scss
   
-  # force HTTPS on production 
-  config.force_ssl = true
 
 end
 

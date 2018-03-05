@@ -9,11 +9,12 @@ RATE_LIMIT = false
 RATE_LIMIT_FREQUENCY = '15'
 
 # main production server to handle all requests (can be a proxy)
-APPLICATION_IP_ADDRESS = '127.0.0.1'
+#APPLICATION_IP_ADDRESS = '127.0.0.1'
+APPLICATION_IP_ADDRESS = '120.78.183.190'
 
 # domain for the API
-API_DOMAIN = 'http://127.0.0.1:3000/'
-
+#API_DOMAIN = 'http://127.0.0.1:3000/'
+API_DOMAIN = 'http://120.78.183.190:80/'
 # get api key from HTTP headers if this value is present
 HTTP_HEADER_API_KEY_NAME = 'THINGSPEAKAPIKEY'
 

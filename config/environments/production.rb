@@ -65,5 +65,7 @@ Thingspeak::Application.configure do
 
   config.assets.js_compressor  = :uglifier
   config.assets.css_compressor = :scss
+  
+
 end
 

@@ -50,7 +50,7 @@ Thingspeak::Application.routes.draw do
   # social channels
   get 's/' => 'pages#social_home'
   get 's/:slug' => 'channels#social_show', :constraints => { :slug => /.*/ }
-  get 'channels/social_new' => 'channels#social_new'
+  get 'channels/social_new' => 'channels#social_create'
 
   # search
   resources :tags

@@ -42,7 +42,7 @@
                // add location if possible
                if (this.location) { p.name = this.location; }
                // if a numerical value exists add it
-               if (!isNaN(parseInt(v))<% if params[:max].present? && Feed.numeric?(params[:max]) %> && p.y <= <%= params[:max] %><% end %><% if params[:min].present? && Feed.numeric?(params[:max]) %> && p.y >= <%= params[:min] %><% end %>) { chartData.push(p); }
+               if (!isNaN(parseInt(v))<% if params[:max].present? && Feed.numeric?(params[:max]) %> && p.y <= <%= params[:max] %><% end %><% if params[:min].present? && Feed.numeric?(params[:min]) %> && p.y >= <%= params[:min] %><% end %>) { chartData.push(p); }
             });
 
             // specify the chart options
@@ -166,8 +166,8 @@
             { name: data.channel.field<%= params[:id] %> }
           ],
           credits: {
-              text: 'ThingSpeak.com',
-              href: 'https://thingspeak.com/',
+              text: 'ThingSpeak',
+              href: 'http://120.78.183.190/',
               style: { color: '#D62020' }
           }
         };

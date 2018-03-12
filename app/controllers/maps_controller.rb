@@ -29,7 +29,8 @@ class MapsController < ApplicationController
 
     # set ssl
     @ssl = (get_header_value('x_ssl') == 'true')
-    @map_domain = @ssl ? 'https://maps-api-ssl.google.com' : 'http://maps.google.com'
+    #@map_domain = @ssl ? 'https://maps-api-ssl.google.com' : 'http://maps.google.cn'
+    @map_domain = @ssl ? 'https://maps.google.cn' : 'http://maps.google.cn'
     @domain = domain(@ssl)
   end
 

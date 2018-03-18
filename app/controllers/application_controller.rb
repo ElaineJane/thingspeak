@@ -214,6 +214,9 @@ class ApplicationController < ActionController::Base
     #def ssl_api_domain; (Rails.env == 'production') ? api_domain.sub('http', 'https'): api_domain; end
     def ssl_api_domain; (Rails.env == 'production') ? api_domain.sub('http', 'http'): api_domain; end
 
+    #def coap_api_domain; (Rails.env == 'production') ? api_domain.sub('http', 'https'): api_domain; end
+    def coap_api_domain; (Rails.env == 'production') ? api_domain.sub('http', 'coap').sub(':80',':5683'): api_domain.sub('http', 'coap').sub(':80',':5683'); end
+
     # gets the api key
     def get_apikey
       key = get_header_value(HTTP_HEADER_API_KEY_NAME) || params[:key] || params[:api_key] || params[:apikey]

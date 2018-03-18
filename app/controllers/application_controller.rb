@@ -34,6 +34,7 @@ class ApplicationController < ActionController::Base
   def set_variables
     @api_domain ||= api_domain
     @ssl_api_domain ||= ssl_api_domain
+    @coap_api_domain ||= coap_api_domain
     @locale ||= get_locale
     I18n.locale = @locale
 
@@ -215,7 +216,7 @@ class ApplicationController < ActionController::Base
     def ssl_api_domain; (Rails.env == 'production') ? api_domain.sub('http', 'http'): api_domain; end
 
     #def coap_api_domain; (Rails.env == 'production') ? api_domain.sub('http', 'https'): api_domain; end
-    def coap_api_domain; (Rails.env == 'production') ? api_domain.sub('http', 'coap').sub(':80',':5683'): api_domain.sub('http', 'coap').sub(':80',':5683'); end
+    def coap_api_domain; (Rails.env == 'production') ? api_domain.sub('http', 'coap').sub(':80',':5683'): api_domain.sub('http', 'coap').sub(':3000',':5683'); end
 
     # gets the api key
     def get_apikey
